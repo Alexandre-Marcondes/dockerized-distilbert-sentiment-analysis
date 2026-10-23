@@ -1,1 +1,25 @@
+# Private documentation
 CODEX_MASTER_PROMPT.md
+DEVELOPMENT_LOG.md
+report/
+
+# Python caches and virtual environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Editor settings and temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

@@ -1,0 +1,14 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+
+  ui:
+    build: ./ui
+    ports:
+      - "7860:7860"
+    environment:
+      API_URL: http://api:8000/predict
+    depends_on:
+      - api
